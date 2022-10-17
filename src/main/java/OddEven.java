@@ -7,20 +7,16 @@ public class OddEven {
     // 0 →  “Even”
     // 222222 →  “Even”
 
-    public String oddEven(long number) {
+    public String oddEven(int number) {
+
         String odd = "Odd";
         String even = "Even";
 
-        if (number >= Integer.MIN_VALUE && number <= Integer.MAX_VALUE) {
-            if (number % 2 == 0) {
+        if (number % 2 == 0) {
 
-                return even;
-            } else {
-
-                return odd;
-            }
+            return even;
         }
 
-        return "Ошибка!";
+        return odd;
     }
 }
