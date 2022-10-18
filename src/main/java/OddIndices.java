@@ -12,7 +12,8 @@ public class OddIndices {
 
         if (massiv2.length > 1) {
 
-            result = new int[(massiv2.length / 2)];
+            result = new int[(massiv2.length / 2)]; // Работает только для НЕ чётных индексов
+
             int count = 0;
             for (int i = 1; i < massiv2.length; i += 2) {
                 result[count] = massiv2[i];
